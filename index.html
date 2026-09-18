@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Order &amp; Delivery Example | Ordering Demo</title>
+<title>Order &amp; Delivery Example | Home</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,59 +16,32 @@
       </div>
       <p class="tagline">Example ordering site — for off-licences, cafes, restaurants &amp; more</p>
       <p class="hours-line">This is a demo build — not a real business.</p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="booking.html">Order Now</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page">
-
-    <section class="products-section">
-      <h2>Deals</h2>
-      <div id="list-deals" class="product-grid"></div>
-
-      <h2 class="section-spacer">Wines</h2>
-      <div id="list-wines" class="product-grid"></div>
-
-      <h2 class="section-spacer">Cocktails</h2>
-      <div id="list-cocktails" class="product-grid"></div>
-    </section>
-
-    <aside class="basket-panel">
-      <h2>Your Order</h2>
-      <div id="basket-items" class="basket-items">
-        <p class="empty-basket">Nothing added yet</p>
-      </div>
-
-      <div class="basket-total-row">
-        <span>Total</span>
-        <span id="basket-total">£0.00</span>
-      </div>
-
-      <div class="fulfilment-picker">
-        <label>Collection or delivery</label>
-        <div class="radio-row">
-          <label><input type="radio" name="fulfilment" value="collection" checked> Collection (free)</label>
-          <label><input type="radio" name="fulfilment" value="delivery"> Delivery (+£3.50)</label>
-        </div>
-      </div>
-
-      <div class="slot-picker">
-        <label for="customer-name">Your name</label>
-        <input type="text" id="customer-name" placeholder="Full name">
-      </div>
-
-      <button id="checkout-btn" class="checkout-btn" disabled>Confirm &amp; Pay</button>
-    </aside>
-
+  <main class="hero-split">
+    <div class="hero-split-text">
+      <h1>Order ahead. Collect or get it delivered.</h1>
+      <p>A split, asymmetric layout — text and call-to-action on one side, a quick feature overview on the other. Works well for any business built around a menu and a basket.</p>
+      <a href="booking.html" class="cta-btn">Start an Order</a>
+    </div>
+    <div class="hero-split-panel">
+      <div class="split-feature">🛍️ <span>Browse the menu</span></div>
+      <div class="split-feature">📦 <span>Collection or delivery</span></div>
+      <div class="split-feature">✅ <span>Instant confirmation</span></div>
+      <div class="split-feature">📧 <span>Owner gets notified</span></div>
+    </div>
   </main>
 
-  <div id="confirmation-overlay" class="overlay hidden">
-    <div class="confirmation-box">
-      <h3>Order received!</h3>
-      <p>This is an example only — no real order has been placed. This shows how a customer's confirmation would look on a live site, including automatic email confirmation and instant owner notification.</p>
-      <button id="close-overlay" class="checkout-btn">Close</button>
-    </div>
-  </div>
+  <footer class="site-footer">
+    <p>Example site by <a href="https://yourbrand5241.netlify.app" target="_blank" rel="noopener">YourBrand</a></p>
+  </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Order &amp; Delivery Example | Home</title>
+<title>Copper &amp; Cork | Home</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhance.css">
 </head>
-<body>
+<body data-theme="order">
 
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-mark">🥂</div>
-        <span class="brand-name">Order &amp; Delivery Example</span>
+        <div class="brand-logo" aria-hidden="true">C&amp;C</div>
+        <span class="brand-name">Copper &amp; Cork</span>
       </div>
-      <p class="tagline">Example ordering site — for off-licences, cafes, restaurants &amp; more</p>
+      <p class="tagline">Off-licence · collection &amp; local delivery · Belfast</p>
       <p class="hours-line">This is a demo build — not a real business.</p>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
@@ -28,10 +29,11 @@
   <main class="hero-split">
     <div class="hero-split-text">
       <h1>Order ahead. Collect or get it delivered.</h1>
-      <p>A split, asymmetric layout — text and call-to-action on one side, a quick feature overview on the other. Works well for any business built around a menu and a basket.</p>
+      <p>Wines, spirits, mixers and party deals, ready when you are. Order online for quick collection or local delivery.</p>
       <a href="booking.html" class="cta-btn">Start an Order</a>
     </div>
     <div class="hero-split-panel">
+      <div class="hero-art" data-hero-art></div>
       <div class="split-feature">🛍️ <span>Browse the menu</span></div>
       <div class="split-feature">📦 <span>Collection or delivery</span></div>
       <div class="split-feature">✅ <span>Instant confirmation</span></div>
@@ -43,5 +45,6 @@
     <p>Example site by <a href="https://yourbrand5241.netlify.app" target="_blank" rel="noopener">YourBrand</a></p>
   </footer>
 
+<script src="enhance.js" defer></script>
 </body>
 </html>
